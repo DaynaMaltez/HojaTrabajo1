@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+       
+        <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semuc Champey</title>
+
+    <link rel="stylesheet" href="Estilos.css">
+    
+
+   
+    </head>
     <body>
-        <h1> Semuc Champey: El Paraíso Natural de Guatemala</h1>
- <h2>Descripción</h2>
+   <header class="banner">
+    <h1>Semuc Champey</h1>
+    <p>El Paraíso Natural de Guatemala</p>
+</header>
+ <section id="descripcion">
 
-<p>
-    Semuc Champey es uno de los destinos turísticos más impresionantes de Guatemala.
+<h2>Descripción</h2>
+
+<p>Semuc Champey es uno de los destinos turísticos más impresionantes de Guatemala.
     Está ubicado en el municipio de Lanquín, departamento de Alta Verapaz,
-    aproximadamente a 350 km de la Ciudad de Guatemala.
-</p>
+    aproximadamente a 350 km de la Ciudad de Guatemala.</p>
 
-<p>
+    <p>
     Es un monumento natural famoso por sus piscinas de agua color turquesa formadas
     sobre un puente natural de piedra caliza, bajo el cual fluye el río Cahabón.
     Entre sus principales atractivos destacan el mirador de Semuc Champey,
     las pozas naturales, la posibilidad de nadar en aguas cristalinas,
     recorrer senderos ecológicos y explorar las cercanas Cuevas de K'an Ba.
 </p>
+
+</section>
 
         <h3>
             Indice de Links
@@ -30,12 +45,25 @@
             </ul>
         </nav>
 
+<section id="Imagenes">
 
-        <h3 id="Imagenes"> Galeria de Imagenes </h3>
-        <img src="./Semuc4.jpg" width="300">
-        <img src="./Semuc1.jpg" width="300">
-        <img src="./Semuc2.jpg" width="300">
-        <img src="./Semuc3.jpg" width="300">
+<h2>Galería de imágenes</h2>
+      <div class="galeria">
+       <img src="./Semuc4.jpg" width="300" data-desc="Mirador de Semuc Champey">
+        <img src="./Semuc1.jpg" width="300" data-desc="Piscinas naturales turquesa">
+        <img src="./Semuc2.jpg" width="300" data-desc="Piscina con agua cristalina">
+        <img src="./Semuc3.jpg" width="300" data-desc="Puente de piedra caliza">
+        </div>
+
+      <div id="modal" class="modal">
+        <span id="cerrar">X</span>
+        <img id="modal-img" src="" alt="">
+        <p id="modal-desc"></p>
+     </div>
+
+
+
+ </section>
 
         <h3> Itinerario </h3>
 
@@ -102,17 +130,58 @@
         </table> 
 
             <h3 id="Actividades"> Actividades </h3>
-            <ul> 
-                <li> Recorrido por el mirador </li>
-                <li> Baño en las piscinas naturales </li>
-                <li> Caminata ecológica </li>
-                <li> Visita a las Cuevas de K'an Ba </li>
-                <li> Acampar en áreas autorizadas.</li>
-                <li> Nadar en las piscinas naturales</li>
+
+            <input type="text" id="buscador" placeholder="Buscar actividad...">
+            <ul id="lista-actividades"> 
+             <li>🏊 Nadar en las piscinas naturales</li>
+             <li>🥾 Caminatas ecológicas</li>
+             <li>📷 Fotografía</li>
+             <li>🌿 Observación de flora y fauna</li>
+                <li>🪨 Explorar las Cuevas K'an Ba</li>
+             <li>🏕️ Acampar</li>
+
             </ul>
+
+            <section id="cotizacion">
+            <h2>Calcula tu Cotización</h2>
+            <form id="form-cotizacion">
+                <label>Número de asistentes:</label>
+                <input type="number" id="asistentes" required><br>
+                <label>Paquete:</label>
+                <select id="paquete">
+                <option value="basico">Básico</option>
+                <option value="premium">Premium</option>
+                </select><br>
+                <label><input type="checkbox" id="transporte"> Transporte incluido</label><br>
+                <label><input type="checkbox" id="alimentacion"> Alimentación</label><br>
+                <label><input type="checkbox" id="equipo"> Equipo</label><br>
+                <button type="button" id="calcular">Calcular Total</button>
+            </form>
+            <p id="resultado"></p>
+            </section>
+
+            <section id="contacto">
+            <h2>Reservación</h2>
+            <form id="form-reserva">
+                <label>Nombre:</label>
+                <input type="text" id="nombre" required><br>
+                <label>Correo:</label>
+                <input type="email" id="correo" required><br>
+                <label>Número de personas:</label>
+                <input type="number" id="personas" required><br>
+                <button type="submit">Enviar</button>
+            </form>
+            <p id="mensaje"></p>
+            </section>
+
+            <section id="reseñas">
+            <h2>Opiniones de nuestros visitantes</h2>
+            <div id="contenedor-reseña"></div>
+            </section>
+
 
             <footer>  <center> Desarrollado por: Dayna Meza M.</center></footer>
 
-       
+        <script src="script.js"></script>
     </body>
 </html>

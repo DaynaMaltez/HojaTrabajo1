@@ -1,0 +1,228 @@
+body{
+
+    font-family:'Poppins', sans-serif;
+
+    margin:0;
+
+    background:#eef7ee;
+
+}
+header{
+
+    background:#2E7D32;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+nav{
+
+    background:#388E3C;
+
+    padding:15px;
+
+    text-align:center;
+
+}
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin:20px;
+
+    font-weight:bold;
+
+}
+nav a:hover{
+
+    color:#FFD54F;
+
+}
+section{
+
+    width:85%;
+
+    margin:30px auto;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0 0 10px rgba(0,0,0,.15);
+
+}
+.galeria{
+
+    text-align:center;
+
+}
+.galeria img{
+
+    width:260px;
+
+    height:180px;
+
+    margin:10px;
+
+    border-radius:10px;
+
+}
+.galeria img:hover{
+
+    transform:scale(1.05);
+
+    transition:.3s;
+
+}
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+th{
+
+    background:#2E7D32;
+
+    color:white;
+
+}
+th,td{
+
+    padding:12px;
+
+    border:1px solid lightgray;
+
+    text-align:center;
+
+}
+ul li{
+
+    margin:10px;
+
+}
+footer{
+
+    background:#2E7D32;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}
+.banner{
+    background-image: url("Semuc5.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner h1{
+    font-size: 55px;
+    text-shadow: 3px 3px 8px black;
+}
+
+.banner p{
+    font-size: 22px;
+    text-shadow: 2px 2px 6px black;
+}
+section{
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    margin:30px auto;
+    width:85%;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+.galeria img{
+    transition:0.4s;
+}
+
+.galeria img:hover{
+    transform:scale(1.08);
+}
+/* Tablets */
+@media screen and (max-width: 768px){
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .galeria img{
+        width:90%;
+        height:auto;
+    }
+
+    section{
+        width:95%;
+    }
+
+}
+/* Celulares */
+
+@media screen and (max-width:480px){
+
+    h1{
+        font-size:30px;
+    }
+
+    table{
+        font-size:12px;
+    }
+
+    td,th{
+        padding:5px;
+    }
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  text-align: center;
+  padding-top: 50px;
+}
+
+.modal.visible {
+  display: block;
+}
+
+
+#modal-img {
+  max-width: 80%;
+  border: 3px solid #fff;
+}
+
+
+#cerrar {
+  position: absolute;
+  top: 20px; right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer; 
+}
+
+
+
+
+
+}

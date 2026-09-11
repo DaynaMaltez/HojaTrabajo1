@@ -1,19 +1,18 @@
 # Proyecto: Sitio Web Semuc Champey
 
 ## Descripción
-Este proyecto presenta un sitio web turístico sobre **Semuc Champey**, Guatemala.  
-Se han agregado nuevas funcionalidades interactivas mediante **JavaScript**, que mejoran la experiencia del usuario:
+Aplicación web desarrollada con React , Vite y React Bootstrap . Se realizó la actualización de la hoja de trabajo 3, agregando nuevas funcionalidades y mejoras estéticas utilizando React, Vite y React Bootstrap.
 
 - **Galería de imágenes interactiva**: al hacer clic en una foto se abre un modal con la imagen ampliada y su descripción.  
-- **Calculadora de cotización**: permite estimar el costo del viaje según número de asistentes, tipo de paquete y servicios adicionales.  
+- **Calculadora de cotización**: Mediante el uso del estado en React, el precio total estimado se calcula y se actualiza en tiempo real conforme el usuario modifique    cualquier opción, sin necesidad de recargar la página.
 - **Filtro de actividades**: búsqueda en tiempo real dentro de la lista de actividades.  
 - **Formulario de reservación**: valida campos y muestra un mensaje dinámico de confirmación.  
-- **Reseñas aleatorias**: se despliega automáticamente un testimonio de visitantes al cargar la página.
+- **Reseñas aleatorias**:  Permite alternar o rotar dinámicamente entre los distintos testimonios disponibles.
 
 ## Enlace del sitio web publicado
-https://transcendent-taiyaki-d507d2.netlify.app/
+https://willowy-taffy-096942.netlify.app/
 
 ## Estudiante
 
 Dayna Marianne Meza Maltez
-cod: 9490-23-3808
+Carnet: 9490-23-3808
